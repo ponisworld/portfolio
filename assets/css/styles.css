@@ -100,6 +100,7 @@ section {
 #my_websites {
     flex-direction: column;
     background-image: linear-gradient(to top, #ec8e9e, #d57c92, #be6b85, #a75a79, #904a6c);
+    text-align:center;
 }
 #websitesCards {display:flex; justify-content: space-between; align-items: center;align-content: center;}
 
@@ -156,6 +157,22 @@ section {
         margin-top: -45vh;
     }
 
+    #my_websites {
+        height:200vh;
+    }
+
+    #websitesCards {
+        flex-direction: column;
+    }
+
+    .card {width: 90vw; height: fit-content;}
+
+    #my_studies {flex-direction: column;}
+
+
 }
 
 
+@media screen and (max-width: 500px) {
+    .grid {grid-template-columns: 1fr; grid-template-rows: 1fr 1fr;}
+}
